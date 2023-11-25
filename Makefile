@@ -23,6 +23,10 @@ rust-experimentation-debug:
 
 build: rust-experimentation-debug
 
+run: build
+	@echo "Running hello-world..."
+	./target/debug/rust-experimentation
+
 all: rust-experimentation-release rust-experimentation-debug
 
 get-rust:
